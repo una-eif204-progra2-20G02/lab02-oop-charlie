@@ -7,7 +7,7 @@
 #include "Person.h"
 
 class Professor: public Person {
-
+private: 
 };
 
 #endif //LAB02_OOP_PROFESSOR_H

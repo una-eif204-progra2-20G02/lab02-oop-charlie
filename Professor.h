@@ -8,6 +8,13 @@
 
 class Professor: public Person {
 private: 
+double monthlySalary;
+double commisionRate;
+
+public:
+Professor();
+Professor(doube monthlySalary, double commissionRate);
+virtual ~Professor
 
 };
 

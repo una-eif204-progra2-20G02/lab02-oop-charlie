@@ -29,6 +29,7 @@ void setLastName();
 virtual double salary() const = 0;
 virtual toString() const = 0;
 // Comentario 
+
 };
 
 

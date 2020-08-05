@@ -9,13 +9,18 @@
 class Professor: public Person {
 private: 
 double monthlySalary;
-double commisionRate;
+double commissionRate;
 
 public:
 Professor();
 Professor(doube monthlySalary, double commissionRate);
-virtual ~Professor
-
+virtual ~Professor;
+double getMonthlySalary();
+void setMonthlySalary(double monthlySalary);
+double getCommissionRate();
+void setCommissionRate(double commissionRate);
+double salary();
+string toString();
 };
 
 #endif //LAB02_OOP_PROFESSOR_H

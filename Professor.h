@@ -13,7 +13,8 @@ double commissionRate;
 
 public:
 Professor();
-Professor(doube monthlySalary, double commissionRate);
+Professor(double monthlySalary, double commissionRate);
+Professor(const string name, const string lastName, int documentId, double monthlySalary, double commissionRate);
 virtual ~Professor;
 double getMonthlySalary();
 void setMonthlySalary(double monthlySalary);

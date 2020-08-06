@@ -5,6 +5,9 @@
 #ifndef LAB02_OOP_ADMINISTRATIVE_H
 #define LAB02_OOP_ADMINISTRATIVE_H
 #include "Person.h"
+#include<sstream>
+
+usingnamespace std;
 
 class Administrative: public Person {
 private: 
@@ -16,7 +19,7 @@ Administrative(double monthlySalary);
 Administrative(const string name, const string lastName, int documentId, double monthlySalary);
 virtual ~Administrative;
 double getMonthlySalary();
-void setMonthlySalary(double monthlySalary);
+void setMonthlySalary(double);
 double salary();
 string toString();
 };

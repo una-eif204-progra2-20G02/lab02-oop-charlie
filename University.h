@@ -9,7 +9,27 @@
 #include "Professor.h"
 #include "Administrative.h"
 
+
 class University {
+
+string nombre;
+Professor* profe;
+Administrative* adminis;
+
+  public:
+
+  University();
+  University(string);
+  University(string,Professor*const,Administrative* const);
+  virtual ~University(); 
+
+  string getNombre();
+  void setNombre(string);
+  Professor getProfessor();
+  void setProfessor(Professor* const)
+  Administrative* getAdministrative();
+  void setAdministrative(Administrative* const);
+  
 
 };
 

@@ -6,6 +6,8 @@
 #define LAB02_OOP_PROFESSOR_H
 #include "Person.h"
 
+using namespace std;
+
 class Professor: public Person {
 private: 
 double monthlySalary;
@@ -21,7 +23,7 @@ void setMonthlySalary(double monthlySalary);
 double getCommissionRate();
 void setCommissionRate(double commissionRate);
 double salary();
-string toString();
+virtual string toString()const;
 };
 
 #endif //LAB02_OOP_PROFESSOR_H

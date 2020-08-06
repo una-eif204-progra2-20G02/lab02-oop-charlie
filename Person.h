@@ -23,9 +23,11 @@ Person();
 Person(string name, string lastName, int documentId);
 virtual~Person();    
 string getFirstName();
-void setFirstName();
+void setFirstName(string);
 string getLastName();
-void setLastName();
+void setLastName(string);
+string getDocumentoId();
+void setDocumentoId(int)
 virtual double salary() const = 0;
 virtual string toString() const;
 // Comentario 

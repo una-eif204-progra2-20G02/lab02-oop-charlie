@@ -5,6 +5,7 @@
 #ifndef LAB02_OOP_UNIVERSITY_H
 #define LAB02_OOP_UNIVERSITY_H
 
+#include <cstdlib>
 #include <vector>
 #include "Professor.h"
 #include "Administrative.h"
@@ -15,6 +16,8 @@ class University {
 string nombre;
 Professor* profe;
 Administrative* adminis;
+std::vector<Professor*> professorList;
+std::vector<Administrative*> administrativeList;
 
   public:
 
@@ -29,8 +32,11 @@ Administrative* adminis;
   void setProfessor(Professor* const);
   Administrative* getAdministrative();
   void setAdministrative(Administrative* const);
-  
-
+  void addProfessor(Professor* pro);
+  void addAdministrative(Administrative* admin);
+  vector<Professor*> getProfessorList();
+  vector<Administrative*> getAdministrative();
+  string toString;
 };
 
 

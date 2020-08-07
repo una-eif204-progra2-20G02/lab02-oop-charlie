@@ -33,3 +33,31 @@ Administrative* University::getAdministrative(){
 void University::setAdministrative(Administrative* admin){
   adminis = admin;
 }
+void University::addProfessor(Professor* pro){
+  professorList.push_back(pro);
+}
+void University::addAdministrative(Administrative* admin){
+  administrativeList.push_back(admin);
+}
+
+vector<Professor*> University::getProfessorList(){
+std::vector<Professor*> professorListReturn;
+for (int cont = 0; cont < professorList.size(); cont++) {
+professorListReturn.push_back(professorList[cont]);
+}
+return professorListReturn;
+}
+
+vector<Administrative*> University::getAdministrative(){
+std::vector<Administrative*> administrativeListReturn;
+for (int cont = 0; cont < professorList.size(); cont++) {
+professorListReturn.push_back(professorList[cont]);
+}
+return professorListReturn;
+}
+string University::toString{
+stringstream s;
+//for (int cont = 0; cont < professorList.size(); cont++) {
+//professorListReturn.push_back(professorList[cont]);
+}
+}

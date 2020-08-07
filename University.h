@@ -25,7 +25,7 @@ Administrative* adminis;
 
   string getNombre();
   void setNombre(string);
-  Professor getProfessor();
+  Professor* getProfessor();
   void setProfessor(Professor* const);
   Administrative* getAdministrative();
   void setAdministrative(Administrative* const);

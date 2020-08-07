@@ -15,9 +15,21 @@ adminis=admin;
 
 University::~University(){}
 
-string University::getNombre(){}
-void University::setNombre(string nom){}
-Professor University::getProfessor(){}
-void University::setProfessor(Professor* professor){}
-Administrative* University::getAdministrative(){}
-void University::setAdministrative(Administrative* admin){}
+string University::getNombre(){
+  return nombre;
+}
+void University::setNombre(string nom){
+  nombre = nom;
+}
+Professor* University::getProfessor(){
+  return profe;
+}
+void University::setProfessor(Professor* professor){
+  profe = professor;
+}
+Administrative* University::getAdministrative(){
+  return adminis;
+}
+void University::setAdministrative(Administrative* admin){
+  adminis = admin;
+}

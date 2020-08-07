@@ -8,6 +8,7 @@ using namespace std;
 
 #include <string>
 #include <ostream>
+#include <sstream>
 
 /**
  * Abstract Class of Person
@@ -26,8 +27,8 @@ string getFirstName();
 void setFirstName(string);
 string getLastName();
 void setLastName(string);
-string getDocumentoId();
-void setDocumentoId(int)
+int getDocumentoId();
+void setDocumentoId(int);
 virtual double salary() const = 0;
 virtual string toString() const;
 // Comentario 

@@ -5,8 +5,16 @@
 #include "Person.h"
 
 
-Person::Person(){}
-
+Person::Person(){
+  name= "";
+  lastName = "";
+  documentId = 0;
+}
+Person::Person(string n, string lastN, int ID){
+  name=n;
+  lastName= lastN;
+  documentId = ID;
+}
 Person::~Person(){
 
 }
@@ -15,23 +23,22 @@ string Person::getFirstName(){
 return name;
 
 }
-void setFirstName(string nom){
+void Person::setFirstName(string nom){
 name=nom;
 
 }
-string getLastName(){
+string Person::getLastName(){
 
-  return lastName
+  return lastName;
 }
-void setLastName(string apell){
+void Person::setLastName(string apell){
   lastName=apell;
 
 }
-string getDocumentoId(){
-
+int Person::getDocumentoId(){
   return documentId;
 }
-void setDocumentoId(int cedul){
+void Person::setDocumentoId(int cedul){
 
 documentId=cedul;
 }

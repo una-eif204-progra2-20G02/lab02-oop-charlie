@@ -22,7 +22,7 @@ Administrative::Administrative(string firstName,string lastName, int documentId,
 }
 
 
-virtual Administrative::~Administrative(){}
+
 
 double Administrative::getMonthlySalary(){
   return monthlySalary;
@@ -42,6 +42,6 @@ string Administrative::toString(){
 stringstream s;
 
 s<<Person::toString();
-s<<Salario:<<monthlySalary<<"\t";
+s<<"Salario:"<<monthlySalary<<"\t";
 return s.str();
 }

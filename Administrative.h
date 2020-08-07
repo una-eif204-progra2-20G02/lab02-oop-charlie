@@ -7,7 +7,7 @@
 #include "Person.h"
 #include<sstream>
 
-usingnamespace std;
+using namespace std;
 
 class Administrative: public Person {
 private: 
@@ -17,7 +17,6 @@ public:
 Administrative();
 Administrative(double monthlySalary);
 Administrative(const string name, const string lastName, int documentId, double monthlySalary);
-virtual ~Administrative;
 double getMonthlySalary();
 void setMonthlySalary(double);
 double salary();

@@ -11,7 +11,10 @@ Professor::Professor(){
 
 }
 
-Professor::Professor(double monthlySalary, double commissionRate):monthlySalary(monthlySalary),commissionRate(commissionRate){}
+Professor::Professor(double mont, double commi, string n ,string lastN, int id): Person(n,lastN,id){
+monthlySalary = mont;
+commissionRate = commi;
+}
 
 Professor::~Professor(){}
 
@@ -31,13 +34,12 @@ void Professor::setCommissionRate(double commission) {
     commissionRate=commission;
 }
 
-double Professor::salary() const {
+double Professor::salary(){
     return (monthlySalary+commissionRate);
 }
 
-  string Professor::toString()const{
+string Professor::toString(){
    stringstream s;
-
     s<<Person::toString();
     s<<"Professor:"<<"\n";
     s<<"Salario con comisiones: "<<salary()<<"\n";

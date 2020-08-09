@@ -61,13 +61,16 @@ return administrativeListReturn;
 string University::toString(){
 stringstream s;
 
-s<<"Professor list: \n";
+s<<"Professor list: \n"<<endl;
 for (int cont = 0; cont < professorList.size(); cont++) {
 s<<professorList[cont]->toString();
+s<<endl<<endl;
 }
-s<<"Admin list: \n";
+s<<"Admin list: \n"<<endl;
 for (int cont = 0; cont < administrativeList.size(); cont++) {
 s<<administrativeList[cont]->toString();
+s<<endl<<endl;
+s<<"\n";
 }
 return s.str();
 }

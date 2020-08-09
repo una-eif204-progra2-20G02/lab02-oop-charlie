@@ -46,9 +46,9 @@ documentId=cedul;
 string Person::toString()const{
 stringstream s;
 
-s<<"Nombre"<<name<<"\n";
-s<<"Apellidos"<<lastName<<"\n";
-s<<"Cedula:"<<documentId<<"\n";
+s<<"Nombre: "<<name<<"\n";
+s<<"Apellidos: "<<lastName<<"\n";
+s<<"Cedula: "<<documentId<<"\n";
 
 return s.str();
 

@@ -42,7 +42,7 @@ double Professor::salary() const{
 string Professor::toString(){
    stringstream s;
     s<<Person::toString();
-    s<<"Professor:"<<"\n";
+   
     s<<"Salario con comisiones: "<<salary()<<"\n";
     s<<"Comisiones: "<<commissionRate<<"\n";
     s<<"salario: "<<monthlySalary<<"\n";

@@ -19,6 +19,7 @@ string name;
 string lastName;
 int documentId;
 
+
 public:
 Person();
 Person(string name, string lastName, int documentId);

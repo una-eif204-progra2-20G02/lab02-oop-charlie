@@ -6,7 +6,9 @@
 #include "University.h"
 
 University::University(){}
-University::University(string){}
+University::University(string nom){
+  nombre=nom;
+}
 University::University(string nom,Professor* prof,Administrative* admin){
 nombre=nom;
 profe=prof;
@@ -48,7 +50,7 @@ professorListReturn.push_back(professorList[cont]);
 return professorListReturn;
 }
 
-vector<Administrative*> University::getAdministrative(){
+vector<Administrative*> University::getAdministrativeList(){
 std::vector<Administrative*> administrativeListReturn;
 for (int cont = 0; cont < administrativeList.size(); cont++) {
     administrativeListReturn.push_back(administrativeList[cont]);
@@ -58,6 +60,7 @@ return administrativeListReturn;
 
 string University::toString(){
 stringstream s;
+
 s<<"Professor list: \n";
 for (int cont = 0; cont < professorList.size(); cont++) {
 s<<professorList[cont]->toString();

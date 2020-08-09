@@ -35,7 +35,7 @@ std::vector<Administrative*> administrativeList;
   void addProfessor(Professor* pro);
   void addAdministrative(Administrative* admin);
   vector<Professor*> getProfessorList();
-  vector<Administrative*> getAdministrative();
+  vector<Administrative*> getAdministrativeList();
   string toString();
 };
 

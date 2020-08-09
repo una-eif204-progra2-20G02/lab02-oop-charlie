@@ -55,9 +55,16 @@ professorListReturn.push_back(professorList[cont]);
 }
 return professorListReturn;
 }
-string University::toString{
+
+string University::toString(){
 stringstream s;
-//for (int cont = 0; cont < professorList.size(); cont++) {
-//professorListReturn.push_back(professorList[cont]);
+s<<"Professor list: \n";
+for (int cont = 0; cont < professorList.size(); cont++) {
+s<<professorList[cont]->toString();
 }
+s<<"Admin list: \n";
+for (int cont = 0; cont < administrativeList.size(); cont++) {
+s<<administrativeList[cont]->toString();
+}
+return s.str();
 }

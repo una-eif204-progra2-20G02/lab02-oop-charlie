@@ -50,10 +50,10 @@ return professorListReturn;
 
 vector<Administrative*> University::getAdministrative(){
 std::vector<Administrative*> administrativeListReturn;
-for (int cont = 0; cont < professorList.size(); cont++) {
-professorListReturn.push_back(professorList[cont]);
+for (int cont = 0; cont < administrativeList.size(); cont++) {
+    administrativeListReturn.push_back(administrativeList[cont]);
 }
-return professorListReturn;
+return administrativeListReturn;
 }
 
 string University::toString(){

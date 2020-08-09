@@ -7,8 +7,9 @@
 
 #include "Professor.h"
 
-Professor::Professor(){
-
+Professor::Professor():Person(){
+monthlySalary=0.0;
+commissionRate =0.0;
 }
 
 Professor::Professor(double mont, double commi, string n ,string lastN, int id): Person(n,lastN,id){
@@ -34,7 +35,7 @@ void Professor::setCommissionRate(double commission) {
     commissionRate=commission;
 }
 
-double Professor::salary(){
+double Professor::salary() const{
     return (monthlySalary+commissionRate);
 }
 

@@ -7,7 +7,6 @@
 
 #include "Person.h"
 
-using namespace std;
 
 class Professor: Person {
 private: 
@@ -22,7 +21,7 @@ double getMonthlySalary();
 void setMonthlySalary(double monthlySalary);
 double getCommissionRate();
 void setCommissionRate(double commissionRate);
-double salary();
+double salary() const override;
 string toString();
 };
 

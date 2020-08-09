@@ -16,7 +16,7 @@ Administrative::Administrative(double montSalary){
 
 }
 
-Administrative::Administrative(string firstName,string lastName, int documentId, double Salary):Person(firstName,lastName,documentId),
+Administrative::Administrative(double Salary, string firstName,string lastName, int documentId):Person(firstName,lastName,documentId),
         monthlySalary(Salary)
 {
 }
@@ -33,9 +33,9 @@ void Administrative::setMonthlySalary(double _monthlySalary){
   monthlySalary=_monthlySalary;
 }
 
-double Administrative::salary(){
+double Administrative::salary()const{
 
-  return 0.00;
+  return 3.00;
 }
 
 string Administrative::toString(){

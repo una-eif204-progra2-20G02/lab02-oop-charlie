@@ -7,8 +7,6 @@
 #include "Person.h"
 #include<sstream>
 
-using namespace std;
-
 class Administrative: public Person {
 private: 
 double monthlySalary;
@@ -16,10 +14,10 @@ double monthlySalary;
 public:
 Administrative();
 Administrative(double monthlySalary);
-Administrative(const string name, const string lastName, int documentId, double monthlySalary);
+Administrative( double monthlySalary, const string name, const string lastName, int documentId);
 double getMonthlySalary();
 void setMonthlySalary(double);
-double salary();
+double salary() const;
 string toString();
 };
 

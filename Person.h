@@ -19,6 +19,8 @@ string name;
 string lastName;
 int documentId;
 
+// prueba clion
+
 
 public:
 Person();

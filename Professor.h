@@ -4,10 +4,25 @@
 
 #ifndef LAB02_OOP_PROFESSOR_H
 #define LAB02_OOP_PROFESSOR_H
+
 #include "Person.h"
 
-class Professor: public Person {
 
+class Professor: Person {
+private: 
+double monthlySalary;
+double commissionRate;
+
+public:
+Professor();
+Professor(double, double, string , string, int);
+virtual ~Professor();
+double getMonthlySalary();
+void setMonthlySalary(double monthlySalary);
+double getCommissionRate();
+void setCommissionRate(double commissionRate);
+double salary() const override;
+string toString();
 };
 
 #endif //LAB02_OOP_PROFESSOR_H
